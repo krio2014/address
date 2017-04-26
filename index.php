@@ -12,6 +12,6 @@
     echo'</tr>';
     echo'</table>';
     
-    echo'</html>';a
+    echo'</html>';
     
 ?>
