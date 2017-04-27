@@ -10,6 +10,7 @@ class person{
     protected $address;
     protected $contactNumber;
     protected $dateCreated;
+	protected $personPK;
     
     
     
@@ -19,8 +20,9 @@ class person{
         $this->lastName = $aLastName;
         $this->dateOfBirth = $aDOB;
         $this->address = $aAddress;
-        $this->contactNumber = $aContactNumber;
+        $this->contactNumber = $acontactNumber;
         $this->dateCreated = date('mjY');
+		$this->personPK = null; 
     }
     
     /*
@@ -88,8 +90,15 @@ class person{
         $date = $day.'/'.$month.'/'.$year;
         return $date;
     }
-    
+	public function getContactNumber()
+	{
+		return $this->contactNumber;
+	}
+	
+	
+	
 }
+
 ?>
 
 
